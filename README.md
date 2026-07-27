@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Human web (legal)
 
-## Getting Started
+Sitio público de **Human** para Google Play y App Store:
 
-First, run the development server:
+| Ruta | Uso |
+|------|-----|
+| `/` | Landing mínima |
+| `/privacy` | Política de privacidad (URL para las stores) |
+| `/terms` | Términos y condiciones |
+| `/delete-account` | Cómo solicitar eliminación de cuenta |
+| `/contact` | Contacto |
+
+Stack: Next.js (App Router) + TypeScript + Tailwind v4. Sin backend.
+
+## Requisitos
+
+- Node.js 20+
+- Cuenta en [Vercel](https://vercel.com) para el deploy
+
+## Desarrollo local
 
 ```bash
+cd human-web
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrí [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Cambiar el email de contacto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Hoy el placeholder es `soporte@human.app`.
 
-## Learn More
+Editá un solo archivo:
 
-To learn more about Next.js, take a look at the following resources:
+[`src/lib/site.ts`](src/lib/site.ts)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```ts
+export const CONTACT_EMAIL = "tu-correo-real@dominio.com";
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Ese valor se usa en privacidad, términos, eliminar cuenta, contacto y el footer.
 
-## Deploy on Vercel
+## Deploy en Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Creá un repo en GitHub/GitLab con el contenido de esta carpeta (`human-web`).
+2. En Vercel: **Add New Project** → Importá el repo.
+3. Framework preset: **Next.js** (autodetectado). Build: `next build`.
+4. Deploy. Anotá la URL, por ejemplo:
+   - `https://human-web.vercel.app`
+   - `https://human-web.vercel.app/privacy`
+   - `https://human-web.vercel.app/delete-account`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### URLs para las stores
+
+Cuando publiques:
+
+- **Google Play / App Store – Privacy policy:** `https://TU-DOMINIO.vercel.app/privacy`
+- **Account deletion (Apple):** `https://TU-DOMINIO.vercel.app/delete-account`
+
+Más adelante, con dominio propio (ej. `humanapp.com`), configurá el dominio en Vercel y actualizá las mismas URLs en las consolas.
+
+## Checklist post-deploy
+
+- [ ] `/privacy` abre sin login
+- [ ] `/delete-account` abre sin login
+- [ ] El email de contacto es el que querés mostrar (o sigue el placeholder a propósito)
+- [ ] Pegaste la URL de privacidad en Play Console y App Store Connect
+
+## Nota legal
+
+Los textos son operativos para cumplir requisitos de las tiendas y reflejar el uso real de Firebase en Human. No sustituyen asesoramiento legal profesional.
