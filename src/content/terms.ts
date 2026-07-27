@@ -1,6 +1,6 @@
-import { CONTACT_EMAIL, SITE_NAME } from "@/lib/site";
+import { CONTACT_EMAIL, LEGAL_UPDATED_AT, SITE_NAME } from "@/lib/site";
 
-export const termsUpdatedAt = "27 de julio de 2026";
+export const termsUpdatedAt = LEGAL_UPDATED_AT;
 
 export const termsIntro = `Estos Términos y Condiciones regulan el uso de ${SITE_NAME}, la aplicación móvil que conecta coaches y alumnos para gestionar entrenamientos. Al usar la aplicación, aceptás estos términos.`;
 
@@ -39,7 +39,7 @@ export const termsSections = [
   {
     heading: "5. Contenido del usuario",
     paragraphs: [
-      "Conservás los derechos sobre el contenido que cargás (por ejemplo, fotos de perfil o datos de entrenamiento). Nos otorgás una licencia limitada para alojarlo y mostrarlo dentro del servicio, solo en la medida necesaria para operar ${SITE_NAME}.",
+      `Conservás los derechos sobre el contenido que cargás (por ejemplo, fotos de perfil o datos de entrenamiento). Nos otorgás una licencia limitada para alojarlo y mostrarlo dentro del servicio, solo en la medida necesaria para operar ${SITE_NAME}.`,
     ],
   },
   {

@@ -1,6 +1,11 @@
-import { APP_BUNDLE_ID, CONTACT_EMAIL, SITE_NAME } from "@/lib/site";
+import {
+  APP_BUNDLE_ID,
+  CONTACT_EMAIL,
+  LEGAL_UPDATED_AT,
+  SITE_NAME,
+} from "@/lib/site";
 
-export const privacyUpdatedAt = "27 de julio de 2026";
+export const privacyUpdatedAt = LEGAL_UPDATED_AT;
 
 export const privacyIntro = `${SITE_NAME} ("la aplicación") es una plataforma destinada a la gestión y seguimiento de entrenamientos físicos entre entrenadores (coaches) y alumnos. Esta Política de Privacidad describe qué datos recopilamos, cómo los usamos y cómo podés solicitar su eliminación.`;
 
@@ -50,32 +55,50 @@ export const privacySections = [
     ],
   },
   {
-    heading: "5. Seguridad",
+    heading: "5. Ubicación de los datos",
+    paragraphs: [
+      "Los datos pueden almacenarse en servidores administrados por Google LLC ubicados en diferentes regiones conforme a la infraestructura de Firebase.",
+    ],
+  },
+  {
+    heading: "6. Seguridad",
     paragraphs: [
       "Los datos se almacenan y procesan utilizando la infraestructura segura de Google Firebase. Aplicamos controles razonables (autenticación, reglas de acceso y buenas prácticas de desarrollo) para proteger la información. Ningún sistema es 100% seguro; te pedimos que protejas también tus credenciales de acceso.",
     ],
   },
   {
-    heading: "6. Eliminación de datos",
+    heading: "7. Cookies (sitio web)",
+    paragraphs: [
+      "La versión web utiliza únicamente cookies técnicas necesarias para su funcionamiento. No utilizamos cookies con fines publicitarios.",
+    ],
+  },
+  {
+    heading: "8. Analytics",
+    paragraphs: [
+      "Cuando Analytics está habilitado, recopilamos métricas de uso agregadas para mejorar el producto. Podés desactivarlo desde la configuración de la aplicación si esa opción está disponible en tu versión.",
+    ],
+  },
+  {
+    heading: "9. Eliminación de datos",
     paragraphs: [
       `Podés solicitar la eliminación de tu cuenta y de los datos asociados escribiendo a ${CONTACT_EMAIL}. Incluí el correo con el que te registraste en ${SITE_NAME}.`,
       "Procesaremos la solicitud en un plazo razonable y eliminaremos o anonimizaremos la información que ya no sea necesaria para obligaciones legales o de seguridad. En la página Eliminar cuenta encontrarás el detalle del proceso.",
     ],
   },
   {
-    heading: "7. Menores",
+    heading: "10. Menores",
     paragraphs: [
       `${SITE_NAME} está dirigida a personas de 13 años o más. Si tenés menos de la edad mínima aplicable en tu país, solo debés usar la aplicación con autorización de tus padres o tutores cuando la ley lo exija.`,
     ],
   },
   {
-    heading: "8. Cambios a esta política",
+    heading: "11. Cambios a esta política",
     paragraphs: [
       "Podemos actualizar esta Política de Privacidad. Publicaremos la versión vigente en esta página con la fecha de última actualización. El uso continuado de la aplicación después de un cambio implica la aceptación de la versión actualizada, en la medida permitida por la ley.",
     ],
   },
   {
-    heading: "9. Contacto",
+    heading: "12. Contacto",
     paragraphs: [
       `Para consultas sobre privacidad o datos personales: ${CONTACT_EMAIL}.`,
     ],

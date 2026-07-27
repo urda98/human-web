@@ -24,11 +24,6 @@ export default function ContactPage() {
         Si querés eliminar tu cuenta, también podés seguir las instrucciones en{" "}
         <Link href="/delete-account">Eliminar cuenta</Link>.
       </p>
-      <p>
-        Nota: {CONTACT_EMAIL} es un correo provisional hasta que Human tenga
-        dominio propio. Actualizaremos esta página cuando el contacto definitivo
-        esté disponible.
-      </p>
     </div>
   );
 }

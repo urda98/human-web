@@ -1,6 +1,6 @@
-import { CONTACT_EMAIL, SITE_NAME } from "@/lib/site";
+import { CONTACT_EMAIL, LEGAL_UPDATED_AT, SITE_NAME } from "@/lib/site";
 
-export const deleteAccountUpdatedAt = "27 de julio de 2026";
+export const deleteAccountUpdatedAt = LEGAL_UPDATED_AT;
 
 export const deleteAccountIntro = `Si querés eliminar tu cuenta de ${SITE_NAME} y los datos asociados, seguí estos pasos. Apple y Google exigen que este proceso sea claro y accesible.`;
 

@@ -5,6 +5,7 @@ import {
   deleteAccountSections,
   deleteAccountUpdatedAt,
 } from "@/content/delete-account";
+import { LEGAL_VERSION } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Eliminar cuenta",
@@ -17,6 +18,7 @@ export default function DeleteAccountPage() {
     <LegalDoc
       title="Eliminar cuenta"
       updatedAt={deleteAccountUpdatedAt}
+      version={LEGAL_VERSION}
       intro={deleteAccountIntro}
       sections={deleteAccountSections}
     />

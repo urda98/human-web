@@ -5,6 +5,7 @@ import {
   privacySections,
   privacyUpdatedAt,
 } from "@/content/privacy";
+import { LEGAL_VERSION } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Política de privacidad",
@@ -17,6 +18,7 @@ export default function PrivacyPage() {
     <LegalDoc
       title="Política de privacidad"
       updatedAt={privacyUpdatedAt}
+      version={LEGAL_VERSION}
       intro={privacyIntro}
       sections={privacySections}
     />

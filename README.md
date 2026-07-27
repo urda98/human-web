@@ -1,10 +1,11 @@
-# Human web (legal)
+# Human web (legal + landing)
 
 Sitio público de **Human** para Google Play y App Store:
 
 | Ruta | Uso |
 |------|-----|
-| `/` | Landing mínima |
+| `/` | Landing con capturas, features y FAQ |
+| `/about` | Quiénes somos |
 | `/privacy` | Política de privacidad (URL para las stores) |
 | `/terms` | Términos y condiciones |
 | `/delete-account` | Cómo solicitar eliminación de cuenta |
@@ -29,17 +30,17 @@ Abrí [http://localhost:3000](http://localhost:3000).
 
 ## Cambiar el email de contacto
 
-Hoy el placeholder es `soporte@human.app`.
+El contacto actual es `appfit02@gmail.com`.
 
 Editá un solo archivo:
 
 [`src/lib/site.ts`](src/lib/site.ts)
 
 ```ts
-export const CONTACT_EMAIL = "tu-correo-real@dominio.com";
+export const CONTACT_EMAIL = "appfit02@gmail.com";
 ```
 
-Ese valor se usa en privacidad, términos, eliminar cuenta, contacto y el footer.
+Ese valor se usa en privacidad, términos, eliminar cuenta, contacto, FAQ y el footer.
 
 ## Deploy en Vercel
 
@@ -64,7 +65,7 @@ Más adelante, con dominio propio (ej. `humanapp.com`), configurá el dominio en
 
 - [ ] `/privacy` abre sin login
 - [ ] `/delete-account` abre sin login
-- [ ] El email de contacto es el que querés mostrar (o sigue el placeholder a propósito)
+- [ ] El email de contacto es el que querés mostrar
 - [ ] Pegaste la URL de privacidad en Play Console y App Store Connect
 
 ## Nota legal

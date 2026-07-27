@@ -7,16 +7,31 @@ type Section = {
 type LegalDocProps = {
   title: string;
   updatedAt: string;
+  version?: string;
   intro?: string;
   sections: Section[];
 };
 
-export function LegalDoc({ title, updatedAt, intro, sections }: LegalDocProps) {
+export function LegalDoc({
+  title,
+  updatedAt,
+  version,
+  intro,
+  sections,
+}: LegalDocProps) {
   return (
     <article className="legal-doc">
       <header className="legal-header">
         <h1>{title}</h1>
-        <p className="legal-updated">Última actualización: {updatedAt}</p>
+        <p className="legal-updated">
+          {version ? (
+            <>
+              Versión {version}
+              <span aria-hidden="true"> · </span>
+            </>
+          ) : null}
+          Última actualización: {updatedAt}
+        </p>
         {intro ? <p className="legal-intro">{intro}</p> : null}
       </header>
       {sections.map((section) => (
