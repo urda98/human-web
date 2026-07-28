@@ -79,17 +79,58 @@ a:hover {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-family: var(--font-display), system-ui, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--fg);
   text-decoration: none;
 }
 
 .brand:hover {
   text-decoration: none;
+  color: var(--fg);
+}
+
+.brand:hover .brand-wordmark {
   color: var(--accent-hover);
+}
+
+.brand-mark-icon {
+  display: block;
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
+}
+
+.brand-wordmark {
+  line-height: 1;
+}
+
+.brand-mark--sm {
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+}
+
+.brand-mark--md {
+  font-size: 1.15rem;
+  letter-spacing: 0.14em;
+}
+
+.brand-mark--lg {
+  gap: 0.85rem;
+  font-size: clamp(2.75rem, 9vw, 4.75rem);
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.brand-mark--lg .brand-mark-icon {
+  width: clamp(3.25rem, 10vw, 4.5rem);
+  height: clamp(3.25rem, 10vw, 4.5rem);
 }
 
 .site-nav {
@@ -126,9 +167,8 @@ a:hover {
 }
 
 .footer-brand {
-  font-family: var(--font-display), system-ui, sans-serif;
-  font-weight: 700;
   margin: 0;
+  width: fit-content;
 }
 
 .footer-nav {
@@ -169,13 +209,23 @@ a:hover {
   text-transform: uppercase;
 }
 
-.hero h1 {
+.hero h1,
+.hero-brand {
+  margin: 0 0 0.35rem;
+}
+
+.hero-brand-mark {
+  display: inline-flex;
+}
+
+.hero-tagline {
+  margin: 0 0 1.25rem;
   font-family: var(--font-display), system-ui, sans-serif;
-  font-size: clamp(3rem, 10vw, 5.5rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 0.95;
-  margin: 0 0 1rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-hover);
 }
 
 .hero-lead {

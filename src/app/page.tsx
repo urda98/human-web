@@ -1,11 +1,11 @@
 import Link from "next/link";
+import { BrandMark } from "@/components/BrandMark";
 import { PhoneShot } from "@/components/PhoneShot";
 import {
   ABOUT_BLURB,
   CONTACT_EMAIL,
   FAQ_ITEMS,
   FEATURES,
-  SITE_NAME,
   SITE_SHORT_TAGLINE,
   SITE_TAGLINE,
   STUDENT_SCREENSHOTS,
@@ -18,7 +18,10 @@ export default function HomePage() {
     <>
       <section className="hero">
         <p className="hero-eyebrow">App de entrenamiento</p>
-        <h1>{SITE_NAME}</h1>
+        <h1 className="hero-brand">
+          <BrandMark href={null} size="lg" className="hero-brand-mark" />
+        </h1>
+        <p className="hero-tagline">Tu mejor versión</p>
         <p className="hero-lead">{SITE_TAGLINE}</p>
         <p className="hero-sub">{SITE_SHORT_TAGLINE}</p>
         <div className="hero-actions">
