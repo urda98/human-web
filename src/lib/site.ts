@@ -1,6 +1,6 @@
 /** Site-wide constants. */
 export const SITE_NAME = "Human";
-export const CONTACT_EMAIL = "appfit02@gmail.com";
+export const CONTACT_EMAIL = "humanappsupport@gmail.com";
 export const APP_BUNDLE_ID = "com.human.app";
 export const LEGAL_VERSION = "1.0";
 export const LEGAL_UPDATED_AT = "27 Julio 2026";

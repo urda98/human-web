@@ -30,14 +30,14 @@ Abrí [http://localhost:3000](http://localhost:3000).
 
 ## Cambiar el email de contacto
 
-El contacto actual es `appfit02@gmail.com`.
+El contacto actual es `humanappsupport@gmail.com`.
 
 Editá un solo archivo:
 
 [`src/lib/site.ts`](src/lib/site.ts)
 
 ```ts
-export const CONTACT_EMAIL = "appfit02@gmail.com";
+export const CONTACT_EMAIL = "humanappsupport@gmail.com";
 ```
 
 Ese valor se usa en privacidad, términos, eliminar cuenta, contacto, FAQ y el footer.
