@@ -2,8 +2,8 @@
 export const SITE_NAME = "Human";
 export const CONTACT_EMAIL = "humanappsupport@gmail.com";
 export const APP_BUNDLE_ID = "com.human.app";
-export const LEGAL_VERSION = "1.0";
-export const LEGAL_UPDATED_AT = "27 Julio 2026";
+export const LEGAL_VERSION = "2.0";
+export const LEGAL_UPDATED_AT = "23 de noviembre de 2026";
 
 export const SITE_TAGLINE =
   "La plataforma que conecta entrenadores y alumnos para planificar, ejecutar y seguir entrenamientos.";

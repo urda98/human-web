@@ -10,7 +10,7 @@ import { LEGAL_VERSION } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Política de privacidad",
   description:
-    "Política de privacidad de Human: datos de cuenta, entrenamiento y servicios Firebase.",
+    "Política de privacidad de Human: cuenta, entrenamiento, evaluaciones antropométricas, consentimiento y Firebase.",
 };
 
 export default function PrivacyPage() {

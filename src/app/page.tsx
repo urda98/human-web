@@ -89,8 +89,11 @@ export default function HomePage() {
 
       <section className="home-section stores-section">
         <div className="section-head">
-          <h2>Disponible próximamente</h2>
-          <p>Human estará en Google Play y App Store. Mientras tanto, esta web cubre privacidad, términos y eliminación de cuenta.</p>
+          <h2>Disponible en Android y iOS</h2>
+          <p>
+            Descargá Human y gestioná tus entrenamientos desde cualquier
+            dispositivo.
+          </p>
         </div>
         <div className="store-badges">
           <span className="store-badge">Google Play</span>

@@ -603,6 +603,17 @@ a:hover {
   letter-spacing: -0.02em;
 }
 
+.legal-subsection {
+  margin-top: 1.25rem;
+}
+
+.legal-section h3 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+
 .legal-section p {
   margin: 0 0 0.75rem;
   color: var(--fg);
